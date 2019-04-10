@@ -87,14 +87,14 @@ Our web app depends on api app. Also both app required some database(s) and may 
 ##### Autonomous virtual environment
 Let create dockerfile in each project to build runnable application with environment
 Let create docker-compose file for web with next strucure:
-```
+```dockerfile
 services:
-database:
-image: microsoft/mssql-server-linux:2017-GA
-web:
-build: .
-api:
-image: docker.registry.mycompany/myproject/api:1.0.0
+  database:
+   image: microsoft/mssql-server-linux:2017-GA
+  web:
+    build: .
+  api:
+    image: docker.registry.mycompany/myproject/api:1.0.0
 ```
 When we run this environment we will recieve clean environment for integrational tests. It remains to fill the database with neccessary migrations and we can test build of web-app against of real virtual servers.
 We see `docker.registry.mycompany/myproject/api:1.0.0` dependency. It means that this dependency must appears before we will run build plan of web app. This dependency relates to latest successfull build of api app with version 1.0.0.
@@ -106,7 +106,7 @@ Let add nexts step to api app build plan:
 ##### Artifact dependency environment
 Most CI tools allow to share artifacts between projects.
 For our build plan we can setup plan to grab latest successfull api app artifact from master branch. In that case we can setup next docker-compose file strucure:
-```Dockerfile
+```dockerfile
 services:
   database:
     image: microsoft/mssql-server-linux:2017-GA
