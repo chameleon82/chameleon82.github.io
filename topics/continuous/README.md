@@ -106,17 +106,17 @@ Let add nexts step to api app build plan:
 ##### Artifact dependency environment
 Most CI tools allow to share artifacts between projects.
 For our build plan we can setup plan to grab latest successfull api app artifact from master branch. In that case we can setup next docker-compose file strucure:
-```
+```Dockerfile
 services:
-database:
-image: microsoft/mssql-server-linux:2017-GA
-web:
-build: .
-api:
-image: openjdk:8
-volumes:
-- ./artifacts:/tmp/artifacts
-command: artifact_install_script.sh
+  database:
+    image: microsoft/mssql-server-linux:2017-GA
+  web:
+    build: .
+  api:
+    image: openjdk:8
+    volumes:
+     - ./artifacts:/tmp/artifacts
+    command: artifact_install_script.sh
 ```
 
 To bee continued...
