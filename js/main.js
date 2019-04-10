@@ -69,6 +69,12 @@ $(function() {
       $( "ul.navbar-nav").append( $("<li class=\"nav-item\">").append(link));
     });
   });
+    
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+  });  
 
   hashchanged();
 });
