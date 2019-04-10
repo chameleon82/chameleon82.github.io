@@ -20,12 +20,11 @@ function hashchanged(){
      $.get(page, function(response){
         $("main").html(md.makeHtml(response));
         htmlTableOfContents();
+        document.querySelectorAll('pre code').forEach((block) => {
+          hljs.highlightBlock(block);
+        });
      })
      currentPage = page;
-      
-    document.querySelectorAll('pre code').forEach((block) => {
-      hljs.highlightBlock(block);
-    });
   }
   if (currentPage == "") {
     $("main").load("main.html");
