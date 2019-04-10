@@ -22,6 +22,10 @@ function hashchanged(){
         htmlTableOfContents();
      })
      currentPage = page;
+      
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
   }
   if (currentPage == "") {
     $("main").load("main.html");
