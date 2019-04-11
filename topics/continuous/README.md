@@ -87,7 +87,7 @@ Our web app depends on api app. Also both app required some database(s) and may 
 ##### Autonomous virtual environment
 Let create dockerfile in each project to build runnable application with environment
 Let create docker-compose file for web with next strucure:
-```dockerfile
+```yaml
 services:
   database:
    image: microsoft/mssql-server-linux:2017-GA
@@ -106,7 +106,7 @@ Let add nexts step to api app build plan:
 ##### Artifact dependency environment
 Most CI tools allow to share artifacts between projects.
 For our build plan we can setup plan to grab latest successfull api app artifact from master branch. In that case we can setup next docker-compose file strucure:
-```dockerfile
+```yaml
 services:
   database:
     image: microsoft/mssql-server-linux:2017-GA
