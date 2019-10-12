@@ -1,0 +1,67 @@
+html, body {
+  font-size: 12px;
+}
+
+sectio{
+ background-color: #f8f9fa;
+}
+
+section img {
+  width: 90px;
+  max-height: 90px;
+}
+
+.photo {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.container section {
+  padding-bottom: 16px;
+}
+
+.container > section {
+  margin-bottom: 16px;
+  border-left: 0px solid;
+  border-image-source: linear-gradient(45deg, rgb(255,255,255), rgb(150,150,150));
+  border-image-slice: 1;
+}}
+
+.lead {
+  font-size: 14px;
+}
+
+header {
+margin-top:16px;
+margin-bottom:16px;
+}
+
+img.holding {
+ height: 30px;
+ width: auto;
+ }
+
+.company {
+ min-height: 40px;
+}
+
+a.logo {
+ margin-right: 10px;
+}
+
+.team {
+  color: #afafaf;
+  font-size: 80%;
+}

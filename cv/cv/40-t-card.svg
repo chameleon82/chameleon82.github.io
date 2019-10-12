@@ -1,0 +1,18 @@
+<svg id="tkarta-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#68B3E2"/>
+            <stop offset="100%" stop-color="#5AA5D4"/>
+        </linearGradient>
+        <path id="a" d="M11 0h18c6.075 0 11 4.925 11 11v18c0 6.075-4.925 11-11 11H11C4.925 40 0 35.075 0 29V11C0 4.925 4.925 0 11 0"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#FFC900" xlink:href="#a"/>
+        <use fill="url(#b)" xlink:href="#a"/>
+        <path fill="#E4003A" d="M40 0v40H0V0z" mask="url(#c)"/>
+        <path fill="#FFF" d="M32.784 12.186h-1.3a3.293 3.293 0 0 0-6.201 0h-9.61a3.293 3.293 0 0 0-6.203 0H8.186A2.186 2.186 0 0 0 6 14.373v13.665c0 1.208.979 2.186 2.186 2.186h24.598a2.186 2.186 0 0 0 2.186-2.186V14.373a2.186 2.186 0 0 0-2.186-2.187zm-4.4-.87a1.975 1.975 0 1 1 0 3.95 1.975 1.975 0 0 1 0-3.95zm-15.813 0a1.975 1.975 0 1 1 0 3.95 1.975 1.975 0 0 1 0-3.95zm20.213 17.269H8.186c-.603 0-.546.057-.546-.547v-1.093h25.69v1.093c0 .604.058.547-.546.547zm.546-14.212v9.292H7.64v-9.292c0-.604-.057-.547.546-.547h1.137a3.292 3.292 0 0 0 6.496 0h9.317a3.292 3.292 0 0 0 6.496 0h1.152c.604 0 .546-.057.546.547z" mask="url(#c)" transform="matrix(1 0 0 -1 0 40.224)"/>
+    </g>
+</svg>
