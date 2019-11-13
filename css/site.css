@@ -1,11 +1,27 @@
-   .bd-sidebar {
-          position: sticky;
-          top: 4rem;
-          height: calc(100vh - 4rem);
-        }
-        .bd-sidebar a {
-          font-size: 90%;
-          color: rgba(0,0,0,.65);
-          padding: .25rem 1.5rem;
-          display: block;
-        }
+.bd-sidebar .bd-sidenav {
+  display: block;
+}
+.bd-sidebar {
+      position: sticky;
+      top: 4rem;
+      height: calc(100vh - 4rem);
+}
+.bd-sidebar a {
+  font-size: 90%;
+  color: rgba(0,0,0,.65);
+  padding: .25rem 1.5rem;
+  display: block;
+}
+
+.toc-h1 {
+  display: none;
+}
+
+.toc-h2 {
+  padding-left: 4px;
+  font-weight: bold;
+}
+
+.toc-h3, .toc-h4, .toc-h5 {
+  padding-left: 8px;
+}
