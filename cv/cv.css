@@ -28,12 +28,7 @@ h3 {
   font-size: 18px;
 }
 
-.container section {
-  padding-bottom: 16px;
-}
-
 .container > section {
-  margin-bottom: 16px;
   border-left: 0px solid;
   border-image-source: linear-gradient(45deg, rgb(255,255,255), rgb(150,150,150));
   border-image-slice: 1;
@@ -64,4 +59,8 @@ a.logo {
 .team {
   color: #afafaf;
   font-size: 80%;
+}
+
+.container > section > div.row:not(.company) > div:nth-child(2n) {
+    padding-bottom: 10px;
 }
