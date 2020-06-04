@@ -32,7 +32,8 @@ h3 {
   border-left: 0px solid;
   border-image-source: linear-gradient(45deg, rgb(255,255,255), rgb(150,150,150));
   border-image-slice: 1;
-  border-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }}
 
 .lead {
