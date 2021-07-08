@@ -64,3 +64,14 @@ a.logo {
 .container > section > div.row:not(.company) > div:nth-child(2n) {
     padding-bottom: 10px;
 }
+
+@media print {
+    @page {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    body {
+        padding-top: 72px;
+        padding-bottom: 72px ;
+    }
+}
